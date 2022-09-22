@@ -1,7 +1,7 @@
 package application;
 
 
-import com.mysql.cj.log.Slf4JLogger;
+
 import entities.Department;
 import entities.Seller;
 import model.dao.DaoFactory;

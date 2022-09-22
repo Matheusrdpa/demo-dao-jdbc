@@ -1,6 +1,6 @@
 package model.dao.impl;
 
-import com.mysql.cj.protocol.Resultset;
+
 import db.DB;
 import db.DbException;
 import entities.Department;
@@ -119,6 +119,7 @@ public class SellerDaoJDBC implements SellerDao {
             );
             st.setInt(1, id);
             rs = st.executeQuery();
+
             if(rs.next()){
                 Department dep = instantiateDepartment(rs);
                 Seller obj = instantiateSeller(rs, dep);
